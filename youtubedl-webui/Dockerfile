@@ -1,7 +1,6 @@
 FROM alpine:3.3
 MAINTAINER Barra <bxt@mondedie.fr>
 
-ENV DOKUWIKI_VERSION 2016-06-26
 ENV GID=1001 UID=1001
 
 RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
@@ -26,7 +25,7 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     git \
   && mkdir -p /var/www \
   && cd /var/www \
-  && curl -L https://yt-dl.org/downloads/2016.06.27/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl \
+  && curl -L https://yt-dl.org/downloads/2016.07.24/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl \
   && git clone "https://github.com/p1rox/youtube-dl-webui.git" youtube-dl
 
 COPY nginx.conf /etc/nginx/nginx.conf
