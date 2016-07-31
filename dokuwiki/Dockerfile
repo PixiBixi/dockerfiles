@@ -23,6 +23,7 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     php7-sqlite3@testing \
     php7-session@testing \
     tar \
+    curl \
   && mkdir -p /var/www \
   && cd /var/www \
   && curl -O "http://download.dokuwiki.org/src/dokuwiki/dokuwiki-$DOKUWIKI_VERSION.tgz" \
