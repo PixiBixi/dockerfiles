@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:latest
 MAINTAINER Barra <bxt@mondedie.fr>
 
 ENV GID=1001 UID=1001
@@ -23,10 +23,11 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     php7-session@testing \
     tar \
     git \
+    curl \
   && mkdir -p /var/www \
   && cd /var/www \
-  && curl -L https://yt-dl.org/downloads/2016.07.24/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl \
-  && git clone "https://github.com/p1rox/youtube-dl-webui.git" youtube-dl
+  && curl -L https://yt-dl.org/downloads/2016.08.13/youtube-dl -o /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl \
+  && git clone "https://github.com/PixiBixi/Youtube-dl-WebUI.git" youtube-dl
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY php-fpm.conf /etc/php7/php-fpm.conf
