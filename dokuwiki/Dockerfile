@@ -26,7 +26,7 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     curl \
   && mkdir -p /var/www \
   && cd /var/www \
-  && curl -O "http://download.dokuwiki.org/src/dokuwiki/dokuwiki-$DOKUWIKI_VERSION.tgz" \
+  && curl -O -L "http://download.dokuwiki.org/src/dokuwiki/dokuwiki-$DOKUWIKI_VERSION.tgz" \
   && tar xzf "dokuwiki-${DOKUWIKI_VERSION}.tgz" --strip 1 \
   && rm "dokuwiki-$DOKUWIKI_VERSION.tgz"
 
