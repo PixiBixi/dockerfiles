@@ -15,7 +15,6 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     php7-iconv@commuedge \
     php7-xml@commuedge \
     php7-dom@commuedge \
-    php7-openssl@commuedge \
     php7-json@commuedge \
     php7-zlib@commuedge \
     php7-pdo_mysql@commuedge \
