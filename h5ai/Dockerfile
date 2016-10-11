@@ -14,12 +14,8 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     php7-iconv@testing \
     php7-xml@testing \
     php7-dom@testing \
-    php7-openssl@testing \
     php7-json@testing \
     php7-zlib@testing \
-    php7-pdo_mysql@testing \
-    php7-pdo_sqlite@testing \
-    php7-sqlite3@testing \
     php7-session@testing \
     wget \
     unzip \
