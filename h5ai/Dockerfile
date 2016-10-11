@@ -8,15 +8,15 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
  && apk -U add \
     nginx \
     supervisor \
-    tini@testing \
-    php7-fpm@testing \
-    php7-curl@testing \
-    php7-iconv@testing \
-    php7-xml@testing \
-    php7-dom@testing \
-    php7-json@testing \
-    php7-zlib@testing \
-    php7-session@testing \
+    tini@commuedge \
+    php7-fpm@commuedge \
+    php7-curl@commuedge \
+    php7-iconv@commuedge \
+    php7-xml@commuedge \
+    php7-dom@commuedge \
+    php7-json@commuedge \
+    php7-zlib@commuedge \
+    php7-session@commuedge \
     wget \
     unzip \
     patch \
