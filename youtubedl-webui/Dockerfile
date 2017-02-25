@@ -7,6 +7,7 @@ RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
  && echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
  && apk -U add \
     nginx \
+    ffmpeg \
     supervisor \
     tini@commuedge \
     php7-fpm@commuedge \
