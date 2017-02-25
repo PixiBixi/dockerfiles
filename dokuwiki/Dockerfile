@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Barra <bxt@mondedie.fr>
 
-ENV DOKUWIKI_VERSION 2016-06-26a
+ENV DOKUWIKI_VERSION 2017-02-19a
 ENV GID=1001 UID=1001
 
 RUN echo "@commuedge http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
