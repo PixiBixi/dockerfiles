@@ -6,7 +6,7 @@ spin up a webserver and start sharing your files through the web.
 
 ## Usage
 
-This docker image is available as a [trusted build on the docker index](https://index.docker.io/u/clue/h5ai/),
+This docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/bixidock/h5ai/),
 so there's no setup required.
 Using this image for the first time will start a download automatically.
 Further runs will be immediate, as the image will be cached locally.
